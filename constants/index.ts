@@ -1,3 +1,4 @@
+import { faInstagram, faWhatsapp, faXTwitter } from "@fortawesome/free-brands-svg-icons"
 import { BRD_I, BRD_II, BRD_III, BRD_IV, BRD_IX, BRD_V, BRD_VI, BRD_VII, BRD_VIII, BRD_X, BRD_XI, BRD_XII, BRD_XIII, BRD_XIV, BRD_XIX, BRD_XV, BRD_XVI, BRD_XVII, BRD_XVIII, BRD_XX, BRD_XXI, BRD_XXII, BRD_XXIII, BRD_XXIV, BTS_I, BTS_II, BTS_III, BTS_IV, BTS_IX, BTS_V, BTS_VI, BTS_VII, BTS_VIII, BTS_X, BTS_XI, BTS_XII, BTS_XIII, BTS_XIV, BTS_XV, BTS_XVI, CNT_C, CNT_CI, CNT_CII, CNT_CIII, CNT_CIV, CNT_CIX, CNT_CV, CNT_CVI, CNT_CVII, CNT_CVIII, CNT_CX, CNT_I, CNT_II, CNT_III, CNT_IV, CNT_IX, CNT_L, CNT_LI, CNT_LII, CNT_LIII, CNT_LIV, CNT_LIX, CNT_LV, CNT_LVI, CNT_LVII, CNT_LVIII, CNT_LX, CNT_LXI, CNT_LXII, CNT_LXIII, CNT_LXIV, CNT_LXIX, CNT_LXV, CNT_LXVI, CNT_LXVII, CNT_LXVIII, CNT_LXX, CNT_LXXI, CNT_LXXII, CNT_LXXIII, CNT_LXXIV, CNT_LXXIX, CNT_LXXV, CNT_LXXVI, CNT_LXXVII, CNT_LXXVIII, CNT_LXXX, CNT_LXXXI, CNT_LXXXII, CNT_LXXXIII, CNT_LXXXIV, CNT_LXXXIX, CNT_LXXXV, CNT_LXXXVI, CNT_LXXXVII, CNT_LXXXVIII, CNT_V, CNT_VI, CNT_VII, CNT_VIII, CNT_X, CNT_XC, CNT_XCI, CNT_XCII, CNT_XCIII, CNT_XCIV, CNT_XCIX, CNT_XCV, CNT_XCVI, CNT_XCVII, CNT_XCVIII, CNT_XI, CNT_XII, CNT_XIII, CNT_XIV, CNT_XIX, CNT_XL, CNT_XLI, CNT_XLII, CNT_XLIII, CNT_XLIV, CNT_XLIX, CNT_XLV, CNT_XLVI, CNT_XLVII, CNT_XLVIII, CNT_XV, CNT_XVI, CNT_XVII, CNT_XVIII, CNT_XX, CNT_XXI, CNT_XXII, CNT_XXIII, CNT_XXIV, CNT_XXIX, CNT_XXV, CNT_XXVI, CNT_XXVII, CNT_XXVIII, CNT_XXX, CNT_XXXI, CNT_XXXII, CNT_XXXIII, CNT_XXXIV, CNT_XXXIX, CNT_XXXV, CNT_XXXVI, CNT_XXXVII, CNT_XXXVIII, SEC_I, SEC_II, SEC_III, SEC_IV, SEC_V, LST_C, LST_CI, LST_CII, LST_CIII, LST_CIV, LST_CIX, LST_CL, LST_CLI, LST_CLII, LST_CLIII, LST_CLIV, LST_CLIX, LST_CLV, LST_CLVI, LST_CLVII, LST_CLVIII, LST_CLX, LST_CLXI, LST_CLXII, LST_CLXIII, LST_CLXIV, LST_CLXIX, LST_CLXV, LST_CLXVI, LST_CLXVII, LST_CLXVIII, LST_CLXX, LST_CLXXI, LST_CLXXII, LST_CLXXIII, LST_CLXXIV, LST_CLXXV, LST_CLXXVI, LST_CV, LST_CVI, LST_CVII, LST_CVIII, LST_CX, LST_CXI, LST_CXII, LST_CXIII, LST_CXIV, LST_CXIX, LST_CXV, LST_CXVI, LST_CXVII, LST_CXVIII, LST_CXX, LST_CXXI, LST_CXXII, LST_CXXIII, LST_CXXIV, LST_CXXIX, LST_CXXL, LST_CXXLI, LST_CXXLII, LST_CXXLIII, LST_CXXLIV, LST_CXXLIX, LST_CXXLV, LST_CXXLVI, LST_CXXLVII, LST_CXXLVIII, LST_CXXV, LST_CXXVI, LST_CXXVII, LST_CXXVIII, LST_CXXX, LST_CXXXI, LST_CXXXII, LST_CXXXIII, LST_CXXXIV, LST_CXXXIX, LST_CXXXV, LST_CXXXVI, LST_CXXXVII, LST_CXXXVIII, LST_I, LST_II, LST_III, LST_IV, LST_IX, LST_L, LST_LI, LST_LII, LST_LIII, LST_LIV, LST_LIX, LST_LV, LST_LVI, LST_LVII, LST_LVIII, LST_LX, LST_LXI, LST_LXII, LST_LXIII, LST_LXIV, LST_LXIX, LST_LXV, LST_LXVI, LST_LXVII, LST_LXVIII, LST_LXX, LST_LXXI, LST_LXXII, LST_LXXIII, LST_LXXIV, LST_LXXIX, LST_LXXV, LST_LXXVI, LST_LXXVII, LST_LXXVIII, LST_LXXX, LST_LXXXI, LST_LXXXII, LST_LXXXIII, LST_LXXXIV, LST_LXXXIX, LST_LXXXV, LST_LXXXVI, LST_LXXXVII, LST_LXXXVIII, LST_V, LST_VI, LST_VII, LST_VIII, LST_X, LST_XC, LST_XCI, LST_XCII, LST_XCIII, LST_XCIV, LST_XCIX, LST_XCV, LST_XCVI, LST_XCVII, LST_XCVIII, LST_XI, LST_XII, LST_XIII, LST_XIV, LST_XIX, LST_XL, LST_XLI, LST_XLII, LST_XLIII, LST_XLIV, LST_XLIX, LST_XLV, LST_XLVI, LST_XLVII, LST_XLVIII, LST_XV, LST_XVI, LST_XVII, LST_XVIII, LST_XX, LST_XXI, LST_XXII, LST_XXIII, LST_XXIV, LST_XXIX, LST_XXV, LST_XXVI, LST_XXVII, LST_XXVIII, LST_XXX, LST_XXXI, LST_XXXII, LST_XXXIII, LST_XXXIV, LST_XXXIX, LST_XXXV, LST_XXXVI, LST_XXXVII, LST_XXXVIII, OUT_I, OUT_II, OUT_III, OUT_IV, OUT_IX, OUT_L, OUT_LI, OUT_LII, OUT_LIII, OUT_LIV, OUT_LIX, OUT_LV, OUT_LVI, OUT_LVII, OUT_LVIII, OUT_LX, OUT_LXI, OUT_LXII, OUT_LXIII, OUT_V, OUT_VI, OUT_VII, OUT_VIII, OUT_X, OUT_XI, OUT_XII, OUT_XIII, OUT_XIV, OUT_XIX, OUT_XL, OUT_XLI, OUT_XLII, OUT_XLIII, OUT_XLIV, OUT_XLIX, OUT_XLV, OUT_XLVI, OUT_XLVII, OUT_XLVIII, OUT_XV, OUT_XVI, OUT_XVII, OUT_XVIII, OUT_XX, OUT_XXI, OUT_XXII, OUT_XXIII, OUT_XXIV, OUT_XXIX, OUT_XXV, OUT_XXVI, OUT_XXVII, OUT_XXVIII, OUT_XXX, OUT_XXXI, OUT_XXXII, OUT_XXXIII, OUT_XXXIV, OUT_XXXIX, OUT_XXXV, OUT_XXXVI, OUT_XXXVII, OUT_XXXVIII, STD_I, STD_II, STD_III, STD_IV, STD_IX, STD_L, STD_LI, STD_LII, STD_LIII, STD_LIV, STD_LIX, STD_LV, STD_LVI, STD_LVII, STD_LVIII, STD_LX, STD_LXI, STD_LXII, STD_LXIII, STD_LXIV, STD_LXIX, STD_LXV, STD_LXVI, STD_LXVII, STD_LXVIII, STD_LXX, STD_LXXI, STD_LXXII, STD_LXXIII, STD_LXXIV, STD_LXXIX, STD_LXXV, STD_LXXVI, STD_LXXVII, STD_LXXVIII, STD_LXXX, STD_LXXXI, STD_LXXXII, STD_LXXXIII, STD_LXXXIV, STD_LXXXV, STD_LXXXVI, STD_V, STD_VI, STD_VII, STD_VIII, STD_X, STD_XI, STD_XII, STD_XIII, STD_XIV, STD_XIX, STD_XL, STD_XLI, STD_XLII, STD_XLIII, STD_XLIV, STD_XLIX, STD_XLV, STD_XLVI, STD_XLVII, STD_XLVIII, STD_XV, STD_XVI, STD_XVII, STD_XVIII, STD_XX, STD_XXI, STD_XXII, STD_XXIII, STD_XXIV, STD_XXIX, STD_XXV, STD_XXVI, STD_XXVII, STD_XXVIII, STD_XXX, STD_XXXI, STD_XXXII, STD_XXXIII, STD_XXXIV, STD_XXXIX, STD_XXXV, STD_XXXVI, STD_XXXVII, STD_XXXVIII } from "../assets"
 
 export const logo = 'https://static.pixieset.com/favicon.ico'
@@ -10,8 +11,8 @@ export const NAV = [
         link: '/'
     },
     {
-        name: 'About',
-        link: '#about-me'
+        name: 'Message',
+        link: '#message'
     },
     {
         name: 'Portfolio',
@@ -19,7 +20,26 @@ export const NAV = [
     },
     {
         name: 'Contact',
-        link: '#contact'
+        link: 'https://api.whatsapp.com/message/A23FM6ZAOIQTF1?autoload=1&app_absent=0'
+    }
+]
+
+export const PRICING_NAV = [
+    {
+        name: 'Home',
+        link: '/'
+    },
+    {
+        name: 'Events',
+        link: '#events'
+    },
+    {
+        name: 'Outfit',
+        link: '#outfit'
+    },
+    {
+        name: 'Home Service',
+        link: '#home-service'
     }
 ]
 
@@ -1531,4 +1551,239 @@ export const AllImages = [
         count: 86,
         name: 'Studio'
     }
+]
+
+export const Prices = [
+    {
+      name: 'Events',
+      id: 'events',
+      details: [
+        {
+          type: 'Basic',
+          image: LST_XVIII,
+          price: 178.6,
+          detail: [
+            {
+              status: true,
+              item: '6 Hour Shoot'
+            },
+            {
+              status: true,
+              item: 'Less than 120 Pictures'
+            },
+            {
+              status: true,
+              item: 'Minimal Picture edit (Max. 40)'
+            },
+            {
+              status: true,
+              item: 'Picture delivery via Google Photos'
+            },
+            {
+              status: false,
+              item: 'Rental'
+            },
+            {
+              status: false,
+              item: 'Logistics'
+            },
+            {
+              status: false,
+              item: 'Online Gallery'
+            },
+          ]
+        },
+        {
+          type: 'Standard',
+          image: LST_CXIV,
+          price: 250,
+          detail: [
+            {
+              status: true,
+              item: 'More than 6 Hours Shoot'
+            },
+            {
+              status: true,
+              item: 'Less than 150 Pictures'
+            },
+            {
+              status: true,
+              item: 'Minimal Picture edit (Max. 80)'
+            },
+            {
+              status: true,
+              item: 'Picture delivery via Google Photos'
+            },
+            {
+              status: false,
+              item: 'Rental'
+            },
+            {
+              status: true,
+              item: 'Logistics'
+            },
+            {
+              status: true,
+              item: 'Online Gallery'
+            },
+          ]
+        }
+      ]
+    },
+    {
+      name: 'Outfits',
+      id: 'outfit',
+      details: [
+       
+        {
+          type: 'Double Outfit',
+          image: OUT_I,
+          price: 86,
+          detail: [
+            {
+              status: true,
+              item: '10 Edited Pictures'
+            },
+            {
+              status: true,
+              item: 'Max of 4 Poses'
+            },
+            {
+              status: true,
+              item: 'Two clothing choice'
+            },
+            {
+              status: true,
+              item: 'Rental'
+            },
+            {
+              status: false,
+              item: 'Logistics'
+            },
+            {
+              status: false,
+              item: 'Online Gallery'
+            },
+          ]
+        },
+        {
+            type: 'Single Outfit',
+            image: LST_CLXXVI,
+            price: 56,
+            detail: [
+              {
+                status: true,
+                item: '5 Edited Pictures'
+              },
+              {
+                status: true,
+                item: 'Max of 4 Poses'
+              },
+              {
+                status: true,
+                item: 'A choice of clothing'
+              },
+              {
+                status: false,
+                item: 'Rental'
+              },
+              {
+                status: false,
+                item: 'Logistics'
+              },
+              {
+                status: false,
+                item: 'Online Gallery'
+              },
+            ]
+          },
+        {
+          type: 'Triple Outfit',
+          image: OUT_LII,
+          price: 129,
+          detail: [
+            {
+              status: true,
+              item: '15 Edited Pictures'
+            },
+            {
+              status: true,
+              item: 'Max of 4 Poses'
+            },
+            {
+              status: true,
+              item: 'Three clothing choice'
+            },
+            {
+              status: true,
+              item: 'Rental'
+            },
+            {
+              status: true,
+              item: 'Logistics'
+            },
+            {
+              status: false,
+              item: 'Online Gallery'
+            },
+          ]
+        },
+      ]
+    },
+    {
+      name: 'Home Service',
+      id: 'home-service',
+      details: [
+        {
+          type: 'Home',
+          image: LST_XIV,
+          price: 290,
+          detail: [
+            {
+              status: true,
+              item: 'Max 10 Hours Shoot'
+            },
+            {
+              status: true,
+              item: 'Tailored Shoot to your needs'
+            },
+            {
+              status: true,
+              item: 'Family Inclusive'
+            },
+            {
+              status: true,
+              item: '4 Outfits'
+            },
+            {
+              status: false,
+              item: 'Rental'
+            },
+            {
+              status: false,
+              item: 'Logistics'
+            },
+            {
+              status: true,
+              item: 'Online Gallery'
+            },
+          ]
+        },
+      ]
+    },
+]
+
+export const Social = [
+    {
+        icon: faInstagram,
+        link: 'https://www.instagram.com/photodean_/'
+    },
+    {
+        icon: faXTwitter,
+        link: 'https://twitter.com/photodean_'
+    },
+    {
+        icon: faWhatsapp,
+        link: 'https://api.whatsapp.com/message/A23FM6ZAOIQTF1?autoload=1&app_absent=0'
+    },
 ]

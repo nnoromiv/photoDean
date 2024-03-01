@@ -21,6 +21,7 @@ const Portfolio = () => {
       <div className='flex flex-col py-10 bg-whiteRabbit'>
         <div className='text-black'>
           <h1 className='text-7xl font-bold mb-5 text-center max-xs-pn:text-5xl'>Portfolio.</h1>
+          <p className='text-3xl font-bold mb-5 text-center max-xs-pn:text-sm'>LET THE IMAGES SPEAK FOR ME.</p>
           <div ref={ref} className={`
               ${isInView ? 'transform-none opacity-1' : 'translate-x-[100%] opacity-0'}
               transition-all duration-2000 ease-in-out delay-1500

@@ -1,22 +1,20 @@
 'use client'
 
 import React from 'react'
-import { Message, Footer, Hero, NavBar, Portfolio, Socials, ScrollUp } from '../../components'
-import { NAV } from '../../constants'
+import { ScrollUp, Socials, NavBar, Footer, Price } from '../../../components'
+import { PRICING_NAV } from '../../../constants'
 
 const Home = () => {
   return (
     <main className='h-full'>
       <ScrollUp />
       <Socials />
-      <NavBar PageLinks={NAV}/>
+      <NavBar PageLinks={PRICING_NAV}/>
       <div className='w-full bg-white dark:bg-base-200'>
         <div className='gradient-linear'>
-          <Hero />
-          <Message />
-          <Portfolio />
+         <Price />
         </div>
-        <Footer type='lg'/>
+        <Footer type='sm'/>
       </div>
     </main>
   )

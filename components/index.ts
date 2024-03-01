@@ -1,4 +1,4 @@
-import About from "./About";
+import Message from "./Message";
 import Button from "./Button";
 import Card from "./Card";
 import Hero from "./Hero";
@@ -8,16 +8,21 @@ import Works from "./Works";
 import Socials from "./Socials";
 import Footer from "./Footer";
 import MobileNav from "./MobileNav";
+import ScrollUp from "./ScrollUp";
+import Price from "./Price";
+
 
 export {
     NavBar,
     Socials,
     Hero,
     Button,
-    About,
+    Message,
     Portfolio,
     Works,
     Card,
     Footer,
-    MobileNav
+    MobileNav,
+    ScrollUp,
+    Price
 }

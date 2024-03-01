@@ -21,7 +21,9 @@ const Works = () => {
     const [allImages, setAllImages] = useState(AllImages)
     
     useEffect(() => {
-        setAllImages(shuffleArray(AllImages))        
+
+        setAllImages(shuffleArray(AllImages))
+
     },[])
 
     return (

@@ -1,14 +1,39 @@
+'use client'
+
 import ModeSwitch from '@/app/ModeSwitcher'
 import Image from 'next/image'
-import React from 'react'
-import { NAV, logo } from '../constants'
+import React, { useEffect, useState } from 'react'
+import { logo } from '../constants'
 import Link from 'next/link'
 import MobileNav from './MobileNav'
+import { NavBarProps } from '../types'
 
 
-const NavBar = () => {
+const NavBar: React.FC<NavBarProps> = ({ active, PageLinks}) => {  
+
+    const [ pageOffset, setPageOffset ] = useState(0)
+
+    useEffect(() => {
+        const handleScroll = () => {
+            const offset = window.scrollY;
+            setPageOffset(offset);
+        };
+    
+        window.addEventListener("scroll", handleScroll);
+    
+        return () => {
+            window.removeEventListener("scroll", handleScroll);
+        };
+    }, []);
+
     return (
-        <nav className="navbar bg-transparent px-3 w-full absolute  top-0 z-11">
+        <div className='relative'>
+            <nav className={`
+            navbar  px-3 w-full
+            ${
+                pageOffset > 50 ? 'fixed top-0 glass z-50' : 'absolute bg-transparent top-0 z-11'
+            }
+        `}>
             <div className="flex-1 max-pn:hidden">
                 <Image
                     src={logo}
@@ -21,9 +46,9 @@ const NavBar = () => {
             <div className="flex-none z-10 max-pn:hidden">
                 <ul className="menu menu-horizontal px-1">
                     {
-                        NAV.map((item: any, index: number) => (
+                        PageLinks.map((item: any, index: number) => (
                             item.name === 'Home' ?
-                            <li key={index} className='text-black  text-[18px]'  >
+                            <li key={index} className='text-black font-bold  text-[18px]'  >
                                 <Link href={item.link}>{item.name} </Link>
                             </li>
                             :
@@ -37,9 +62,10 @@ const NavBar = () => {
             </div>
 
             <div className='pn:hidden'>
-                <MobileNav />
+                <MobileNav PageLinks={PageLinks}/>
             </div>
         </nav>
+        </div>
     )
 }
 

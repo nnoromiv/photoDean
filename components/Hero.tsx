@@ -34,8 +34,8 @@ const Hero = () => {
         </h1>
         <h3 className='text-5xl mb-3 lt:text-3xl'>Nigeria, NG</h3>
         <div className='gap-2'>
-          <Button title='ABOUT ME' style='mt-20 mr-10 max-pn:w-fit' />
-          <Button title='PRICING' style='mt-20 max-pn:w-fit' />
+          <Button title='LINK TREE' style='mt-20 mr-10 max-pn:w-fit'  link='https://linktr.ee/Photodean' target='_blank'/>
+          <Button title='PRICING' style='mt-20 max-pn:w-fit' link='/pricing' target='_blank' />
         </div>
       </div>
       <div className='stack px-2 animate-moveOut'>

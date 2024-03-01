@@ -6,13 +6,13 @@ import { about } from '../constants'
 import Button from './Button'
 import { useInView } from 'framer-motion'
 
-const About = () => {
+const Message = () => {
     const ref = useRef<Element>(null) as any
     const isInView = useInView(ref, { once: true })
 
     return (
         <div ref={ref} 
-            id='about-me'
+            id='message'
             className={`
                 flex items-center justify-center max-lt:gap-[20%] max-lt:flex-col min-lt:gap-5 max-lt:mt-5
                 ${
@@ -27,7 +27,7 @@ const About = () => {
                     alt='hero'
                     width={500}
                     height={500}
-                    className='w-[761px] h-[1037px] rounded-about max-lt:w-full max-lt:h-[900px] max-pn:h-[600px] max-xs-pn:h-[500px]'
+                    className='object-cover w-[761px] h-[1037px] rounded-about max-lt:w-full max-lt:h-[900px] max-pn:h-[600px] max-xs-pn:h-[500px]'
 
                 />
             </div>
@@ -47,4 +47,4 @@ const About = () => {
     )
 }
 
-export default About
+export default Message

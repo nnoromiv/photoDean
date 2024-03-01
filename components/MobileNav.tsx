@@ -2,9 +2,9 @@
 
 import { useState } from "react";
 import { motion, Variants } from "framer-motion";
-import { NAV } from "../constants";
 import Link from "next/link";
 import ModeSwitch from "@/app/ModeSwitcher";
+import { NavBarProps } from "../types";
 
 const itemVariants: Variants = {
   open: {
@@ -15,7 +15,7 @@ const itemVariants: Variants = {
   closed: { opacity: 0, y: 20, transition: { duration: 0.2 } }
 };
 
-const MobileNav = () => {
+const MobileNav: React.FC<NavBarProps> = ({ active,PageLinks }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
@@ -68,7 +68,7 @@ const MobileNav = () => {
         className="flex flex-col bg-whiteRabbit p-5 z-10"
       >
         {
-          NAV.map((item: any, index: number) => (
+          PageLinks.map((item: any, index: number) => (
             item.name === 'Home' ?
               <motion.li className="text-xl text-black" variants={itemVariants} key={index}  >
                 <Link href={item.link}>{item.name} </Link>

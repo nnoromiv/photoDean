@@ -1,9 +1,25 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
     images: {
-        domains: [
-            'static.pixieset.com',
-            'images-pw.pixieset.com'
+        remotePatterns: [
+            {
+                protocol: 'https',
+                hostname: 'static.pixieset.com',
+                port: '',
+                pathname: '/**'
+            },
+            {
+                protocol: 'https',
+                hostname: 'images-pw.pixieset.com',
+                port: '',
+                pathname: '/**',
+            },
+            {
+                protocol: 'https',
+                hostname: 'images.unsplash.com',
+                port: '',
+                pathname: '/**',
+            }
         ],
     },
 };
