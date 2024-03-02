@@ -42,7 +42,7 @@ const NavBar: React.FC<NavBarProps> = ({ active, PageLinks}) => {
                     width={50}
                     height={50}
                     alt='logo'
-                    className='bg-white rounded-full mr-3'
+                    className='bg-white rounded-full mr-3 z-50'
                 />
                 <h2 className="text-black text-3xl dark:text-white max-pn:hidden">Photo Dean</h2>
             </div>
@@ -66,7 +66,7 @@ const NavBar: React.FC<NavBarProps> = ({ active, PageLinks}) => {
                 <ModeSwitch />
             </div>
 
-            <div className='pn:hidden'>
+            <div className='pn:hidden z-40'>
                 <MobileNav PageLinks={PageLinks}/>
             </div>
         </nav>
