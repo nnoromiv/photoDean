@@ -39,3 +39,24 @@ export interface CardProps {
     price: number,
     bodyStyle?: string
 }
+
+export interface ImageLib {
+    image: {
+        image: StaticImageData;
+    }[];
+    count: number;
+    name: string;
+    link: string;
+} 
+
+export interface WorksProps {
+    endIndex?: number
+    showButton?: boolean
+    theImage?: ImageLib[]
+}
+
+export interface PortfolioProps {
+    super: WorksProps
+    pageTitle?: string
+}
+

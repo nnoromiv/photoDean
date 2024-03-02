@@ -12,7 +12,7 @@ const Price = () => {
         Prices.map((item: any, index: number) => (
           <div className='flex flex-col justify-center items-center' id={item.id} key={index}>
             <h1 className="text-4xl">{item.name}</h1>
-            <div className={`grid ${item.details.length <= 3 ? `grid-cols-${item.details.length}` : 'grid-cols-2'} justify-between gap-4 max-tb:grid-cols-1`} >
+            <div className={`flex justify-between gap-4 max-lt:flex-col `} >
               {
                 item.details.map((item: any, index: number) => (
                   <div key={index} className="last:text-yellow-600">

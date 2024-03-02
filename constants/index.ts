@@ -19,16 +19,16 @@ export const NAV = [
         link: '#portfolio'
     },
     {
+        name: 'All Images',
+        link: '/images'
+    },
+    {
         name: 'Contact',
         link: 'https://api.whatsapp.com/message/A23FM6ZAOIQTF1?autoload=1&app_absent=0'
     }
 ]
 
 export const PRICING_NAV = [
-    {
-        name: 'Home',
-        link: '/'
-    },
     {
         name: 'Events',
         link: '#events'
@@ -40,7 +40,46 @@ export const PRICING_NAV = [
     {
         name: 'Home Service',
         link: '#home-service'
+    },
+    {
+        name: 'Contact',
+        link: 'https://api.whatsapp.com/message/A23FM6ZAOIQTF1?autoload=1&app_absent=0'
     }
+]
+
+export const IMAGES_NAV = [
+    // {
+    //     name: 'Behind The Scene',
+    //     link: '#behind-the-scene'    
+    // },
+    {
+        name: 'Brand',
+        link: '#brand'    
+    },
+    {
+        name: 'Concert',
+        link: '#concert'    
+    },
+    // {
+    //     name: 'SEC',
+    //     link: '#s-e-c'    
+    // },
+    {
+        name: 'Life Style',
+        link: '#life-style'    
+    },
+    // {
+    //     name: 'Out Door',
+    //     link: '#out-door'    
+    // },
+    // {
+    //     name: 'Studio',
+    //     link: '#studio'
+    // },
+    {
+        name: 'Pricing',
+        link: '/pricing'
+    },
 ]
 
 export const BehindTheScene = [
@@ -1519,37 +1558,44 @@ export const AllImages = [
     {
         image: BehindTheScene,
         count: 15,
-        name: 'Behind The Scene'
+        name: 'Behind The Scene',
+        link: 'behind-the-scene'    
     },
     {
         image: Brand,
         count: 24,
-        name: 'Brand'
+        name: 'Brand',
+        link: 'brand'    
     },
     {
         image: Concert,
         count: 110,
-        name: 'Concert'
+        name: 'Concert',
+        link: 'concert'    
     },
     {
         image: SEC,
         count: 110,
-        name: 'SEC'
+        name: 'SEC',
+        link: 's-e-c'    
     },
     {
         image: LifeStyle,
         count: 176,
-        name: 'Life Style'
+        name: 'Life Style',
+        link: 'life-style'    
     },
     {
         image: Outdoor,
         count: 63,
-        name: 'Out Door'
+        name: 'Out Door',
+        link: 'out-door'    
     },
     {
         image: Studio,
         count: 86,
-        name: 'Studio'
+        name: 'Studio',
+        link: 'studio'
     }
 ]
 
@@ -1787,3 +1833,5 @@ export const Social = [
         link: 'https://api.whatsapp.com/message/A23FM6ZAOIQTF1?autoload=1&app_absent=0'
     },
 ]
+
+export const DynamicPages = ['behind-the-scene', 'brand', 'concert', 's-e-c', 'life-style', 'out-door', 'studio']

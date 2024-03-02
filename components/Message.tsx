@@ -32,14 +32,14 @@ const Message = () => {
                 />
             </div>
 
-            <div className='text-black max-lt:px-20 max-pn:px-4'>
+            <div className='text-black max-lt:px-20 max-pn:px-4 dark:text-white'>
                 <h1 className='text-6xl font-bold mb-5'>Message</h1>
-                <div className='bg-black h-[2px] w-full'></div>
-                <p className="text-grey w-[500px] mt-5 leading-loose max-lt:w-full">
-                    <em className='font-bold text-4xl text-black'>E</em> legance is not merely a visual concept; it&apos;s a narrative waiting to unfold. It&apos;s the delicate interplay of light and shadow, the unspoken poetry in a candid smile, and the timeless beauty found in the simplest of moments. A skilled photographer wields their camera like a storyteller&apos;s pen, capturing the essence of elegance in every frame. It&apos;s not about extravagant settings or opulent subjects; rather, it&apos;s the art of distilling grace from the ordinary, revealing the sophistication that exists in the day
+                <div className='bg-black h-[2px] w-full dark:bg-white'></div>
+                <p className="text-grey w-[500px] mt-5 leading-loose max-lt:w-full dark:text-whiteRabbit">
+                    <em className='font-bold text-4xl text-black dark:text-white'>E</em> legance is not merely a visual concept; it&apos;s a narrative waiting to unfold. It&apos;s the delicate interplay of light and shadow, the unspoken poetry in a candid smile, and the timeless beauty found in the simplest of moments. A skilled photographer wields their camera like a storyteller&apos;s pen, capturing the essence of elegance in every frame. It&apos;s not about extravagant settings or opulent subjects; rather, it&apos;s the art of distilling grace from the ordinary, revealing the sophistication that exists in the day
                 </p>
                 
-                <Button title='LEARN MORE' style='mt-20' />
+                {/* <Button title='LEARN MORE' style='mt-20' /> */}
                 
             </div>
             

@@ -28,7 +28,7 @@ const ScrollUp = () => {
     return (
         pageOffset > 50 &&
         <div className='flex flex-row gap-4 fixed bottom-20 items-start justify-start w-full px-5 z-50'>
-            <FontAwesomeIcon onClick={handleUp} icon={faUpLong} className='text-black cursor-pointer w-[40px] border-link border-[3px] py-3 rounded-lg' />
+            <FontAwesomeIcon onClick={handleUp} icon={faUpLong} className='text-black cursor-pointer w-[40px] border-link border-[3px] py-3 rounded-lg dark:text-white' />
         </div>
     )
 }

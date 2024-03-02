@@ -1,10 +1,10 @@
 'use client'
 
 import React, { useEffect, useState } from 'react'
-import { ScrollUp, Socials, NavBar, Footer, Price, Loading } from '../../../components'
-import { PRICING_NAV } from '../../../constants'
+import { Footer, NavBar, Portfolio, Socials, ScrollUp, Loading } from '../../../components'
+import { IMAGES_NAV } from '../../../constants'
 
-const Home = () => {
+const Page = () => {
   const [load, setLoad] = useState(true)
 
   useEffect(() => {
@@ -26,10 +26,10 @@ const Home = () => {
           <main className='h-full'>
             <ScrollUp />
             <Socials />
-            <NavBar PageLinks={PRICING_NAV} />
+            <NavBar PageLinks={IMAGES_NAV} />
             <div className='w-full bg-white dark:bg-base-200'>
-              <div className='bg-gradient-linear bg-white bg-23 dark:bg-dark-gradient-linear'>
-                <Price />
+              <div className='bg-gradient-linear bg-white bg-23 dark:bg-dark-gradient-linear mb-3'>
+                <Portfolio super={{ endIndex: -1 }} />
               </div>
               <Footer type='sm' />
             </div>
@@ -39,4 +39,4 @@ const Home = () => {
   )
 }
 
-export default Home
+export default Page

@@ -34,25 +34,30 @@ const NavBar: React.FC<NavBarProps> = ({ active, PageLinks}) => {
                 pageOffset > 50 ? 'fixed top-0 glass z-50' : 'absolute bg-transparent top-0 z-11'
             }
         `}>
-            <div className="flex-1 max-pn:hidden">
+           <div className="flex-1">
+            <Link href={'/'}>
+            <div className='flex items-center '>
                 <Image
                     src={logo}
                     width={50}
                     height={50}
                     alt='logo'
+                    className='bg-white rounded-full mr-3'
                 />
-                <h2 className="text-black text-3xl">Photo Dean</h2>
+                <h2 className="text-black text-3xl dark:text-white max-pn:hidden">Photo Dean</h2>
             </div>
+            </Link>
+           </div>
             <div className="flex-none z-10 max-pn:hidden">
                 <ul className="menu menu-horizontal px-1">
                     {
                         PageLinks.map((item: any, index: number) => (
                             item.name === 'Home' ?
-                            <li key={index} className='text-black font-bold  text-[18px]'  >
+                            <li key={index} className='text-base-200 font-bold  text-[18px] dark:text-white'  >
                                 <Link href={item.link}>{item.name} </Link>
                             </li>
                             :
-                            <li key={index} className='text-grey  text-[18px]' >
+                            <li key={index} className='text-grey  text-[18px] dark:text-white' >
                                 <Link href={item.link}>{item.name} </Link>
                             </li>
                         ))

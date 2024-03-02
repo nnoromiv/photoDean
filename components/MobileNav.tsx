@@ -15,7 +15,7 @@ const itemVariants: Variants = {
   closed: { opacity: 0, y: 20, transition: { duration: 0.2 } }
 };
 
-const MobileNav: React.FC<NavBarProps> = ({ active,PageLinks }) => {
+const MobileNav: React.FC<NavBarProps> = ({ active, PageLinks }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
@@ -65,16 +65,16 @@ const MobileNav: React.FC<NavBarProps> = ({ active,PageLinks }) => {
           }
         }}
         style={{ pointerEvents: isOpen ? "auto" : "none" }}
-        className="flex flex-col bg-whiteRabbit p-5 z-10"
+        className="flex flex-col bg-whiteRabbit dark:bg-base-200 p-5 z-10"
       >
         {
           PageLinks.map((item: any, index: number) => (
             item.name === 'Home' ?
-              <motion.li className="text-xl text-black" variants={itemVariants} key={index}  >
+              <motion.li className="text-xl text-black dark:text-whiteRabbit" variants={itemVariants} key={index}  >
                 <Link href={item.link}>{item.name} </Link>
               </motion.li>
               :
-              <motion.li className="text-xl text-grey" variants={itemVariants} key={index} >
+              <motion.li className="text-xl text-grey dark:text-white" variants={itemVariants} key={index} >
                 <Link href={item.link}>{item.name} </Link>
               </motion.li>
           ))

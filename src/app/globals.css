@@ -8,9 +8,15 @@ body, html {
 }
 
 .gradient-linear{
- background-color: white;
- background-image: radial-gradient(#696C6D 0.3px, #ffffff 0.3px);
- background-size: 23px 23px;
+  background-color: white;
+  background-image: radial-gradient(#696C6D 0.3px, #ffffff 0.3px);
+  background-size: 23px 23px;
+}
+
+.dark-gradient-linear{
+  background-color: #0f172a;
+  background-image: radial-gradient(#ffffff 0.3px, #0f172a 0.3px);
+  background-size: 23px 23px;
 }
 
 

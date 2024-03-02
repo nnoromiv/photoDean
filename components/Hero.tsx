@@ -15,14 +15,15 @@ const Hero = () => {
       const images = [...imageStack]
       images.unshift(images.pop() as any)
       setImageSTack(images)
-    }, 5000)
+    }, 2500)
 
     return () => clearInterval(intervalId)
+    
   }, [imageStack])
 
   return (
     <div className='flex items-center justify-center gap-6 max-lt:flex-col max-lt:pt-32 max-lt:text-center'>
-      <div className='text-black animate-moveIn'>
+      <div className='text-black animate-moveIn dark:text-white'>
         <h1 id='type' className='text-6xl font-bold mb-5 max-lt:text-8xl max-pn:text-5xl'>
           <Typewriter
             options={{

@@ -10,6 +10,7 @@ import Footer from "./Footer";
 import MobileNav from "./MobileNav";
 import ScrollUp from "./ScrollUp";
 import Price from "./Price";
+import Loading from "./Loading";
 
 
 export {
@@ -24,5 +25,6 @@ export {
     Footer,
     MobileNav,
     ScrollUp,
-    Price
+    Price,
+    Loading
 }

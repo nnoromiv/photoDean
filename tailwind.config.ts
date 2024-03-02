@@ -1,7 +1,6 @@
 import type { Config } from "tailwindcss";
 import { default as flattenColorPalette } from "tailwindcss/lib/util/flattenColorPalette";
 
-
 const config: Config = {
   darkMode: 'class',
   content: [
@@ -12,8 +11,14 @@ const config: Config = {
   theme: {
     extend: {
       backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic": "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+        "gradient-linear": "radial-gradient(#696C6D 0.3px, #ffffff 0.3px)",
+        "dark-gradient-linear": "radial-gradient(#ffffff 0.3px, #191e24 0.3px)",
+      },
+      backgroundColor : {
+        'dark': '#191e24'
+      },
+      backgroundSize: {
+        '23': '23px 23px',
       },
       colors: {
         "whiteRabbit": " #f7ede8",
